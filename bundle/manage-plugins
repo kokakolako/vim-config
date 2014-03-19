@@ -1,4 +1,4 @@
-#/usr/bin/ruby
+#!/usr/bin/ruby
 
 # if ENV["XDG_CONFIG_HOME"] != ""
 #     if File.directory? "#{ENV['XDG_CONFIG_HOME']}/vim"
@@ -21,7 +21,6 @@
 # end
 
 plugins = [
-    "https://github.com/kokakolako/molokai",
     "https://github.com/bling/vim-airline",
     "https://github.com/paranoida/vim-airlineish",
     "https://github.com/Shougo/neocomplete",
@@ -52,7 +51,7 @@ plugins = [
     "https://github.com/airblade/vim-gitgutter",
     "https://github.com/gcmt/wildfire.vim",
     "https://github.com/tpope/vim-pathogen",
-    "https://github.com/kana/vim-textobj-entire",
+    "https://github.com/kana/vim-textobj-entire"
 ]
 
 
