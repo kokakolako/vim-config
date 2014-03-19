@@ -1,5 +1,23 @@
 #!/usr/bin/ruby
+ 
+# if ENV["XDG_CONFIG_HOME"] != ""
+#     if File.directory? "#{ENV['XDG_CONFIG_HOME']}/vim"
+#         vim_dir = "#{ENV['XDG_CONFIG_HOME']}/vim"
+#     else
+#         if File.directory? "#{ENV['HOME']}/.vim"
+#             vim_dir = "#{ENV['HOME']}/.vim"
+#         end
+#     end
+# else
+#     if File.directory? "#{ENV['HOME']}/.config/vim"
+#         vim_dir = "#{ENV['HOME']}/.config/vim"
+#     end
+#     if File.directory? "#{ENV['HOME']}/.vim"
+#         vim_dir = "#{ENV['HOME']}/.vim"
+#     end
+# end
 
+<<<<<<< HEAD
 # if ENV["XDG_CONFIG_HOME"] != ""
 #     if File.directory? "#{ENV['XDG_CONFIG_HOME']}/vim"
 #         vim_dir = "#{ENV['XDG_CONFIG_HOME']}/vim"
@@ -17,6 +35,8 @@
 #     end
 # end
 # 
+=======
+>>>>>>> b55da86ad7adbfdc26d09fa10c25edc3b804cfe1
 # if File.directory? 
 # end
 
