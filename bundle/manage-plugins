@@ -1,24 +1,24 @@
-#!/usr/bin/ruby
+#/usr/bin/ruby
 
-if ENV["XDG_CONFIG_HOME"] != ""
-    if File.directory? "#{ENV['XDG_CONFIG_HOME']}/vim"
-        vim_dir = "#{ENV['XDG_CONFIG_HOME']}/vim"
-    else
-        if File.directory? "#{ENV['HOME']}/.vim"
-            vim_dir = "#{ENV['HOME']}/.vim"
-        end
-    end
-else
-    if File.directory? "#{ENV['HOME']}/.config/vim"
-        vim_dir = "#{ENV['HOME']}/.config/vim"
-    end
-    if File.directory? "#{ENV['HOME']}/.vim"
-        vim_dir = "#{ENV['HOME']}/.vim"
-    end
-end
-
-if File.directory? 
-end
+# if ENV["XDG_CONFIG_HOME"] != ""
+#     if File.directory? "#{ENV['XDG_CONFIG_HOME']}/vim"
+#         vim_dir = "#{ENV['XDG_CONFIG_HOME']}/vim"
+#     else
+#         if File.directory? "#{ENV['HOME']}/.vim"
+#             vim_dir = "#{ENV['HOME']}/.vim"
+#         end
+#     end
+# else
+#     if File.directory? "#{ENV['HOME']}/.config/vim"
+#         vim_dir = "#{ENV['HOME']}/.config/vim"
+#     end
+#     if File.directory? "#{ENV['HOME']}/.vim"
+#         vim_dir = "#{ENV['HOME']}/.vim"
+#     end
+# end
+# 
+# if File.directory? 
+# end
 
 plugins = [
     "https://github.com/kokakolako/molokai",
@@ -29,13 +29,11 @@ plugins = [
     "https://github.com/ntpeters/vim-better-whitespace",
     "https://github.com/kana/vim-smartinput",
     "https://github.com/kien/ctrlp.vim",
-    "https://github.com/rstacruz/sparkup",
     "https://github.com/scrooloose/syntastic",
     "https://github.com/godlygeek/tabular",
     "https://github.com/suxpert/vimcaps",
     "https://github.com/matchit.zip",
     "https://github.com/justinmk/vim-sneak",
-    "https://github.com/LaTeX-Box-Team/LaTeX-Box",
     "https://github.com/tommcdo/vim-exchange",
     "https://github.com/nelstrom/vim-markdown-folding",
     "https://github.com/lilydjwg/colorizer",
