@@ -83,3 +83,11 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
 
+" Startify (Custom Startpage)
+" --------------------------------------------------------
+
+let g:startify_custom_header = map(split(system('fortune -as | cowsay'), '\n'), 'v:val')
+
+" Better-Whitespace should not highlight the startify-page
+au VimEnter * ToggleWhitespace
+
