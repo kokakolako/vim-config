@@ -48,7 +48,6 @@ nnoremap <Leader>c :ColorToggle<CR>
 nnoremap <Leader>s :StripWhitespace<CR>:echo "Removed the whitespace"<CR>
 nnoremap <Leader>g :GitGutterToggle<CR>:echo "Toggled Gitgutter"<CR>
 nnoremap <Leader>r :w<CR>:source %<CR>:echo "Sourced the current file"<CR>
-nnoremap <Leader>w :w<CR>
 nnoremap <Leader>v :split $HOME/.config/vim/vimrc<CR>
 nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
@@ -59,16 +58,23 @@ nnoremap <Leader>ü :cd %:p:h<CR>:pwd<CR>
 " Faster open the current Folding
 nnoremap <silent> <Space><Space> za
 
+" Jump through the GitGutter Hunks
+" rmal! vaegq
+nnoremap <silent> ]g :GitGutterNextHunk<CR>
+nnoremap <silent> [g :GitGutterPrevHunk<CR>
+
 " Autocommands
 " --------------------------------------------------------
 
 if has("autocmd")
 
-    " Enable Spellcheck in *.md and *.txt files
-    au BufNewFile,BufRead,BufEnter *.md setlocal spell spelllang=de
-    au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
+    augroup ft_markdown
+        " Enable Spellcheck
+        au BufNewFile,BufRead,BufEnter *.md setlocal spell spelllang=de
 
-    au BufWrite *.md normal!ggvGgq
+        " Set textwidth to 76
+        au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
+    augroup END
 
     " Disable Spellcheck in Help-Files
     au FileType help setlocal nospell
