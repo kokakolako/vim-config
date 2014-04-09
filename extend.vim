@@ -12,10 +12,6 @@ nnoremap <C-u> <esc>vawUi
 " Use a more comfortable Leader Key (for a QUERTZ keyboard-layout)
 let mapleader = " "
 
-" Remap the CtrlP mapping to
-let g:ctrlp_map = "<Leader>p"
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-
 " Mapping better splitting
 nnoremap <silent> <C-e> :wincmd w<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
@@ -51,6 +47,9 @@ nnoremap <Leader>r :w<CR>:source %<CR>:echo "Sourced the current file"<CR>
 nnoremap <Leader>v :split $HOME/.config/vim/vimrc<CR>
 nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
+nnoremap <Leader>p :Unite file_rec/async<CR>
+nnoremap <Leader>/ :Unite grep:.<CR>
+nnoremap <Leader>q :bd<CR>
 
 " Jump to the buffers directory
 nnoremap <Leader>ü :cd %:p:h<CR>:pwd<CR>
