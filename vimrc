@@ -5,6 +5,8 @@ set nocompatible
 set rtp+=$HOME/.config/vim
 runtime! bundle/vim-pathogen/autoload/pathogen.vim
 
+set term=screen-256color
+
 " Invoke Pathogen
 silent! execute pathogen#infect("bundle/{}")
 silent! execute pathogen#infect("src/{}")

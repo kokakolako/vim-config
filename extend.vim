@@ -36,6 +36,10 @@ nnoremap <silent> J :bn<CR>
 nnoremap <silent> K :bp<CR>
 nnoremap <silent> <Leader>j :join<CR>
 
+" Use <C-H,J,K,L> to jump through the splits
+" nnoremap <silent> <C-J> 
+" nnoremap <silent> K :bp<CR>
+
 " Search for the same word but don't jump to it
 nnoremap * *<C-O>
 

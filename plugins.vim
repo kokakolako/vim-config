@@ -86,8 +86,23 @@ endif
 " Startify (Custom Startpage)
 " --------------------------------------------------------
 
-let g:startify_custom_header = map(split(system('fortune -as | cowsay'), '\n'), 'v:val')
+let g:startify_files_number = 5
+let g:startify_custom_header =
+    \ map(split(system('fortune -as | cowsay -f bud-frogs'), '\n'), '"   ".v:val') + ['']
 
 " Better-Whitespace should not highlight the startify-page
-au VimEnter * ToggleWhitespace
+au FileType startify ToggleWhitespace
 
+" COnfigure the Startify list-order
+let g:startify_list_order = [
+    \ ['   Recently modified'],
+    \ 'files',
+    \ ['   Bookmarks'],
+    \ 'bookmarks',
+    \ ['  Sessions'],
+    \ 'sessions',
+    \ ['   Modified in current dir'],
+    \ 'dir'
+\]
+
+let g:startify_bookmarks = [ '~/.vimrc', '~/.config/X11/Xresources', '~/.config/i3/config' ]
