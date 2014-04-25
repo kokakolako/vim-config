@@ -59,6 +59,9 @@ set tabpagemax=50                     " Maximal 50 suggestions at tabcompletion
 set backupdir=$HOME/.cache/vim/backup " Store backups in one global dir
 set directory=$HOME/.cache/vim/swap   " Store swap-files in one global dir
 
+" Adding a german thesaurus-file
+set thesaurus+=$HOME/.config/vim/openthesaurus.txt
+
 " Creating a viminfo-file
 if !empty(&viminfo)
   set viminfo^=!
