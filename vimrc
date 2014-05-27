@@ -36,7 +36,7 @@ if &t_Co > 2 || has( "gui_running" )
     set t_Co=256
 endif
 
-colorscheme molokai                   " Set the colorscheme
+colorscheme hemisu                   " Set the colorscheme
 set ruler                             " Show the cursor position all the time
 set number                            " Show line numbers
 set history=1000                      " Keep 1000 lines of command line history

@@ -101,3 +101,6 @@
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule "bundle/vim-hemisu"]
+	path = bundle/vim-hemisu
+	url = https://github.com/noahfrederick/vim-hemisu
