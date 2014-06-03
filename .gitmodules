@@ -104,3 +104,9 @@
 [submodule "bundle/vim-hemisu"]
 	path = bundle/vim-hemisu
 	url = https://github.com/noahfrederick/vim-hemisu
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "tagbar"]
+	path = tagbar
+	url = https://github.com/majutsushi/tagbar
