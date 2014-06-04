@@ -1,15 +1,19 @@
 [submodule "src/molokai"]
 	path = src/molokai
 	url = https://github.com/kokakolako/molokai
+    ignore = dirty
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+    ignore = dirty
 [submodule "bundle/vim-airlineish"]
 	path = bundle/vim-airlineish
 	url = https://github.com/paranoida/vim-airlineish
+    ignore = dirty
 [submodule "bundle/neocomplete"]
 	path = bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete
+    ignore = dirty
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
 	url = https://github.com/kana/vim-textobj-user
@@ -17,6 +21,7 @@
 [submodule "bundle/vim-better-whitespace"]
 	path = bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
+    ignore = dirty
 [submodule "bundle/vim-smartinput"]
 	path = bundle/vim-smartinput
 	url = https://github.com/kana/vim-smartinput
@@ -24,9 +29,11 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
+    ignore = dirty
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular
+    ignore = dirty
 [submodule "bundle/vimcaps"]
 	path = bundle/vimcaps
 	url = https://github.com/suxpert/vimcaps
@@ -34,57 +41,75 @@
 [submodule "bundle/vim-sneak"]
 	path = bundle/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
+    ignore = dirty
 [submodule "bundle/vim-exchange"]
 	path = bundle/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange
+    ignore = dirty
 [submodule "bundle/vim-markdown-folding"]
 	path = bundle/vim-markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding
+    ignore = dirty
 [submodule "bundle/colorizer"]
 	path = bundle/colorizer
 	url = https://github.com/lilydjwg/colorizer
+    ignore = dirty
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish
+    ignore = dirty
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+    ignore = dirty
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch
+    ignore = dirty
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+    ignore = dirty
 [submodule "bundle/vim-obsession"]
 	path = bundle/vim-obsession
 	url = https://github.com/tpope/vim-obsession
+    ignore = dirty
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+    ignore = dirty
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
+    ignore = dirty
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown
+    ignore = dirty
 [submodule "bundle/vim-systemd-syntax"]
 	path = bundle/vim-systemd-syntax
 	url = https://github.com/Matt-Stevens/vim-systemd-syntax
+    ignore = dirty
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
 	url = https://github.com/Shougo/neosnippet
+    ignore = dirty
 [submodule "bundle/neosnippet-snippets"]
 	path = bundle/neosnippet-snippets
 	url = https://github.com/Shougo/neosnippet-snippets
+    ignore = dirty
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+    ignore = dirty
 [submodule "bundle/wildfire.vim"]
 	path = bundle/wildfire.vim
 	url = https://github.com/gcmt/wildfire.vim
+    ignore = dirty
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
+    ignore = dirty
 [submodule "bundle/vim-textobj-entire"]
 	path = bundle/vim-textobj-entire
 	url = https://github.com/kana/vim-textobj-entire
@@ -92,21 +117,28 @@
 [submodule "bundle/vim-startify"]
 	path = bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify
+    ignore = dirty
 [submodule "bundle/unite.vim"]
 	path = bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim
+    ignore = dirty
 [submodule "bundle/vimproc.vim"]
 	path = bundle/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim
+    ignore = dirty
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
+    ignore = dirty
 [submodule "bundle/vim-hemisu"]
 	path = bundle/vim-hemisu
 	url = https://github.com/noahfrederick/vim-hemisu
+    ignore = dirty
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch
+    ignore = dirty
 [submodule "tagbar"]
 	path = tagbar
 	url = https://github.com/majutsushi/tagbar
+    ignore = dirty
