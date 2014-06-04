@@ -138,7 +138,7 @@
 	path = bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch
     ignore = dirty
-[submodule "tagbar"]
-	path = tagbar
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
     ignore = dirty
