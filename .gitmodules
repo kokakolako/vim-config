@@ -142,3 +142,7 @@
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
     ignore = dirty
+[submodule "bundle/linediff.vim"]
+	path = bundle/linediff.vim
+	url = https://github.com/AndrewRadev/linediff.vim
+    ignore = dirty
