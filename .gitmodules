@@ -146,3 +146,6 @@
 	path = bundle/linediff.vim
 	url = https://github.com/AndrewRadev/linediff.vim
     ignore = dirty
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim
