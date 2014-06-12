@@ -12,13 +12,6 @@ nnoremap <C-u> <esc>vawUi
 " Use a more comfortable Leader Key (for a QUERTZ keyboard-layout)
 let mapleader = " "
 
-" Mapping better splitting
-nnoremap <silent> <C-e> :wincmd w<CR>
-nnoremap <silent> <C-k> :wincmd k<CR>
-nnoremap <silent> <C-j> :wincmd j<CR>
-nnoremap <silent> <C-h> :wincmd h<CR>
-nnoremap <silent> <C-l> :wincmd l<CR>
-
 inoremap <expr><TAB> neosnippet#expandable_or_jumpable() ?
             \ "\<Plug>(neosnippet_expand_or_jump)"
             \: pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -36,9 +29,12 @@ nnoremap <silent> J :bn<CR>
 nnoremap <silent> K :bp<CR>
 nnoremap <silent> <Leader>j :join<CR>
 
-" Use <C-H,J,K,L> to jump through the splits
-" nnoremap <silent> <C-J> 
-" nnoremap <silent> K :bp<CR>
+" Use M-h/j/k/l to jump through the splits
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+nnoremap <silent> <C-e> :wincmd w<CR>
 
 " Search for the same word but don't jump to it
 nnoremap * *<C-O>
@@ -53,12 +49,12 @@ nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
 nnoremap <Leader>p :Unite file_rec/async<CR>
 nnoremap <Leader>/ :Unite grep:.<CR>
-nnoremap <Leader>q :bd<CR>
+nnoremap <silent> <Leader>u :GundoToggle<CR>
 
 " Jump to the buffers directory
 nnoremap <Leader>ü :cd %:p:h<CR>:pwd<CR>
 
-" Faster open the current Folding
+":Faster open the current Folding
 nnoremap <silent> <Space><Space> za
 
 " Jump through the GitGutter Hunks
