@@ -96,7 +96,7 @@ let g:startify_custom_header =
 " Better-Whitespace should not highlight the startify-page
 au FileType startify ToggleWhitespace
 
-" COnfigure the Startify list-order
+" Configure the Startify list-order
 let g:startify_list_order = [
     \ ['   Recently modified'],
     \ 'files',
