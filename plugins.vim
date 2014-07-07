@@ -5,10 +5,10 @@
 let g:airline_powerline_fonts = 1
 
 " Use a nice airline theme
-let g:airline_theme = "airlineish"
+let g:airline_theme = "hemisu_airline"
 
 " Enable some extensions
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
 
 " Configure the whitespace extension
@@ -20,13 +20,22 @@ let g:airline_left_sep = " "
 let g:airline_right_sep = " "
 let g:airline_left_alt_sep = "|"
 let g:airline_right_alt_sep = "|"
-let g:airline#extensions#tabline#left_sep = " "
-let g:airline#extensions#tabline#right_sep = "  "
-let g:airline#extensions#tabline#right_alt_sep = "|"
-let g:airline#extensions#tabline#left_alt_sep = "|"
+" let g:airline#extensions#tabline#left_sep = " "
+" let g:airline#extensions#tabline#right_sep = "  "
+" let g:airline#extensions#tabline#right_alt_sep = "|"
+" let g:airline#extensions#tabline#left_alt_sep = "|"
 
 " Enabling Tagbar
 let g:airline#extensions#tagbar#enabled = 1
+
+" CtrlSpace
+" --------------------------------------------------------
+
+" Let CtrlSpace display it own styles
+let g:airline_exclude_preview = 1
+
+" autocmd BufNewFile __CS__ set statusline=0
+" let g:ctrlspace_statusline=0
 
 " Neocomplete (Autocompletion in vim)
 " --------------------------------------------------------
@@ -75,11 +84,13 @@ inoremap <expr> <Space> pumvisible() ? "\<C-y>\<Space>" : "\<Space>"
 inoremap <expr> <Esc> pumvisible() ? "\<C-y>\<Esc>" : "\<Esc>"
 
 " Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+augroup specific_filetype
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+augroup END
 
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
