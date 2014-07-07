@@ -145,3 +145,9 @@
 [submodule "bundle/gundo.vim"]
 	path = bundle/gundo.vim
 	url = https://github.com/sjl/gundo.vim
+[submodule "bundle/vim-ctrlspace"]
+	path = bundle/vim-ctrlspace
+	url = https://github.com/szw/vim-ctrlspace
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
