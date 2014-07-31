@@ -58,10 +58,6 @@
 	path = bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish
     ignore = dirty
-[submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
-	url = https://github.com/tpope/vim-commentary
-    ignore = dirty
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch
@@ -85,10 +81,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown
-    ignore = dirty
-[submodule "bundle/vim-systemd-syntax"]
-	path = bundle/vim-systemd-syntax
-	url = https://github.com/Matt-Stevens/vim-systemd-syntax
     ignore = dirty
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
@@ -145,9 +137,28 @@
 [submodule "bundle/gundo.vim"]
 	path = bundle/gundo.vim
 	url = https://github.com/sjl/gundo.vim
+    ignore = dirty
 [submodule "bundle/vim-ctrlspace"]
 	path = bundle/vim-ctrlspace
 	url = https://github.com/szw/vim-ctrlspace
+    ignore = dirty
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
+    ignore = dirty
+[submodule "bundle/tcomment_vim"]
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim
+    ignore = dirty
+[submodule "bundle/gist.vim"]
+	path = bundle/gist.vim
+	url = https://github.com/Keithbsmiley/gist.vim
+    ignore = dirty
+[submodule "bundle/limelight.vim"]
+	path = bundle/limelight.vim
+	url = https://github.com/junegunn/limelight.vim
+    ignore = dirty
+[submodule "bundle/glowshi-ft.vim"]
+	path = bundle/glowshi-ft.vim
+	url = https://github.com/saihoooooooo/glowshi-ft.vim
+    ignore = dirty
