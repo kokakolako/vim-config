@@ -20,23 +20,25 @@ source $HOME/.config/vim/extend.vim
 filetype plugin indent on
 syntax on
 
-set autoindent                 " Enable auto-identing
-set autowrite                  " Automatically write when changing buffer
-set encoding=utf-8             " Enable utf-8 encoding
-set backspace=indent,eol,start " Use backspace in insert-mode
-set showcmd                    " Show the previous command
-set smarttab                   " Expand tabs specific to the filetype
-set shiftround                 " Round the shiftwidth
-set ttimeout                   " Enable a timeout
-set ttimeoutlen=100            " Define the timeout length
-set mouse=a                    " Enable mouse-support
+set autoindent                        " Enable auto-identing
+set autowrite                         " Automatically write when changing buffer
+set encoding=utf-8                    " Enable utf-8 encoding
+set backspace=indent,eol,start        " Use backspace in insert-mode
+set showcmd                           " Show the previous command
+set smarttab                          " Expand tabs specific to the filetype
+set shiftround                        " Round the shiftwidth
+set ttimeout                          " Enable a timeout
+set ttimeoutlen=100                   " Define the timeout length
+set mouse=a                           " Enable mouse-support
 
 if &t_Co > 2 || has( "gui_running" )
     set incsearch
     set t_Co=256
 endif
 
-colorscheme hemisu                   " Set the colorscheme
+" Set the colorscheme
+colorscheme hemisu
+
 set ruler                             " Show the cursor position all the time
 set number                            " Show line numbers
 set history=1000                      " Keep 1000 lines of command line history
@@ -71,4 +73,3 @@ endif
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
   runtime! macros/matchit.vim
 endif
-

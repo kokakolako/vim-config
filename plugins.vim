@@ -33,6 +33,7 @@ let g:airline#extensions#tagbar#enabled = 1
 
 " Let CtrlSpace display it own styles
 let g:airline_exclude_preview = 1
+let g:ctrlspace_use_tabline = 1
 
 " autocmd BufNewFile __CS__ set statusline=0
 " let g:ctrlspace_statusline=0
