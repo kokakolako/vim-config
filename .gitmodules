@@ -146,10 +146,6 @@
 	path = bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
     ignore = dirty
-[submodule "bundle/tcomment_vim"]
-	path = bundle/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim
-    ignore = dirty
 [submodule "bundle/gist.vim"]
 	path = bundle/gist.vim
 	url = https://github.com/Keithbsmiley/gist.vim
