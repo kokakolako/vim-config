@@ -29,7 +29,9 @@ nnoremap <silent> <Leader>j :join<CR>
 " Search for the same word but don't jump to it
 nnoremap * *<C-O>
 
-" Quickly toggle important settings
+" Leader Mappings
+" --------------------------------------------------------
+
 nnoremap <Leader>c :ColorToggle<CR>
 nnoremap <Leader>s :StripWhitespace<CR>:echo "Removed the whitespace"<CR>
 nnoremap <Leader>g :GitGutterToggle<CR>:echo "Toggled Gitgutter"<CR>
@@ -37,9 +39,10 @@ nnoremap <Leader>r :w<CR>:source %<CR>:echo "Sourced the current file"<CR>
 nnoremap <Leader>v :split $HOME/.config/vim/vimrc<CR>
 nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
-nnoremap <Leader>p :Unite file_rec/async<CR>
-nnoremap <Leader>/ :Unite grep:.<CR>
 nnoremap <silent> <Leader>u :GundoToggle<CR>
+
+" Adding a modeline
+nnoremap <silent> <Leader>m :normal Gi" vim: ft=vim fmr="{{{,}}}" fdm=manual<CR>
 
 " Jump to the buffers directory
 nnoremap <Leader>ü :cd %:p:h<CR>:pwd<CR>
@@ -53,6 +56,8 @@ nnoremap <silent> [g :GitGutterPrevHunk<CR>
 
 " Navigate through the splits the same way like in tmux
 " http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
+" --------------------------------------------------------
+
 if exists('$TMUX')
   function! TmuxOrSplitSwitch(wincmd, tmuxdir)
     let previous_winnr = winnr()
@@ -83,27 +88,29 @@ endif
 
 if has("autocmd")
 
-    augroup ft_markdown
+    augroup specific_filetype
+
+        " Disable Spellcheck in Help-Files
+        au FileType help setlocal nospell
+        " Enable marker-folding in Vim-files
+        au FileType vim setlocal foldmethod=marker
+
+        " Use pandoc to sort markdown (Use 'gq' in normal-mode)
+        let pandoc_pipeline = "pandoc --from=markdown --to=markdown"
+        au FileType markdown,text let &formatprg=pandoc_pipeline"{{{"}}}
+
+    augroup END
+
+    augroup detect_filetype_while_opening_buffer
+
+        " Mutt Mail settings
+        autocmd BufRead,BufNewFile *mutt-* setfiletype mail
         " Enable Spellcheck
         au BufNewFile,BufRead,BufEnter *.md setlocal spell
 
         " Set textwidth to 76
         au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
-    augroup END
 
-    " Disable Spellcheck in Help-Files
-    au FileType help setlocal nospell
-
-    " Enable marker-folding in Vim-files
-    au FileType vim setlocal foldmethod=marker
-
-    " Use pandoc to sort markdown (Use 'gq' in normal-mode)
-    let pandoc_pipeline = "pandoc --from=markdown --to=markdown"
-    au FileType markdown let &formatprg=pandoc_pipeline
-
-    " Mail
-    augroup filetypedetect
-        autocmd BufRead,BufNewFile *mutt-* setfiletype mail
     augroup END
 
 endif
@@ -114,3 +121,5 @@ endif
 iabbrev -> →
 iabbrev Vergelich Vergleich
 iabbrev vergelich vergleich
+
+" vim: ft=vim fmr="{{{,}}}" fdm=manual" vim: ft=vim fmr="{{{,}}}" fdm=manual" vim: ft=vim fmr="{{{,}}}" fdm=manual
