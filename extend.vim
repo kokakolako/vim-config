@@ -40,9 +40,10 @@ nnoremap <Leader>v :split $HOME/.config/vim/vimrc<CR>
 nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
 nnoremap <silent> <Leader>u :GundoToggle<CR>
+nnoremap <silent> <leader>m :!pandoc -o %:r.pdf %<CR>:echo "Finished compiling to PDF"<CR>
 
 " Adding a modeline
-nnoremap <silent> <Leader>m :normal Gi" vim: ft=vim fmr="{{{,}}}" fdm=manual<CR>
+" nnoremap <silent> <Leader>m :normal Gi" vim: ft=vim fmr="{{{,}}}" fdm=manual<CR>
 
 " Jump to the buffers directory
 nnoremap <Leader>ü :cd %:p:h<CR>:pwd<CR>
@@ -88,7 +89,7 @@ endif
 
 if has("autocmd")
 
-    augroup specific_filetype
+    augroup specific_ft
 
         " Disable Spellcheck in Help-Files
         au FileType help setlocal nospell
@@ -97,20 +98,24 @@ if has("autocmd")
 
         " Use pandoc to sort markdown (Use 'gq' in normal-mode)
         let pandoc_pipeline = "pandoc --from=markdown --to=markdown"
-        au FileType markdown,text let &formatprg=pandoc_pipeline"{{{"}}}
+        au FileType markdown,text let &formatprg=pandoc_pipeline
 
     augroup END
 
-    augroup detect_filetype_while_opening_buffer
+    augroup new_buf_detect_ft
 
         " Mutt Mail settings
-        autocmd BufRead,BufNewFile *mutt-* setfiletype mail
+        au BufRead,BufNewFile *mutt-* setfiletype mail
         " Enable Spellcheck
         au BufNewFile,BufRead,BufEnter *.md setlocal spell
 
         " Set textwidth to 76
         au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
 
+    augroup END
+
+    augroup buf_write_tex
+        au BufWritePost,QuitPre *.tex,*.md silent !pandoc -o %:r.pdf %
     augroup END
 
 endif
@@ -121,5 +126,3 @@ endif
 iabbrev -> →
 iabbrev Vergelich Vergleich
 iabbrev vergelich vergleich
-
-" vim: ft=vim fmr="{{{,}}}" fdm=manual" vim: ft=vim fmr="{{{,}}}" fdm=manual" vim: ft=vim fmr="{{{,}}}" fdm=manual
