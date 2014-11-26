@@ -61,6 +61,7 @@ set wildmode=full                                  " Change the behaviour of wil
 set tabpagemax=50                                  " Maximal 50 suggestions at tabcompletion
 set backupdir=$HOME/.cache/vim/backup              " Store backups in one global dir
 set directory=$HOME/.cache/vim/swap                " Store swap-files in one global dir
+set linebreak
 
 " Creating a viminfo-file
 if !empty(&viminfo)

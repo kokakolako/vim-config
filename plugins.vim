@@ -2,7 +2,7 @@
 " --------------------------------------------------------
 
 " Use powerline fonts
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " Use a nice airline theme
 let g:airline_theme = "hemisu_airline"

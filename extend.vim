@@ -114,9 +114,9 @@ if has("autocmd")
 
     augroup END
 
-    augroup buf_write_tex
-        au BufWritePost,QuitPre *.tex,*.md silent !pandoc -o %:r.pdf %
-    augroup END
+    " augroup buf_write_tex
+    "     au BufWritePost,QuitPre *.tex,*.md silent !pandoc -o %:r.pdf %
+    " augroup END
 
 endif
 
