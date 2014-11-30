@@ -9,10 +9,6 @@ nnoremap <C-u> <esc>vawUi
 " Use a more comfortable Leader Key (for a QUERTZ keyboard-layout)
 let mapleader = " "
 
-inoremap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-            \ "\<Plug>(neosnippet_expand_or_jump)"
-            \: pumvisible() ? "\<C-n>" : "\<TAB>"
-
 " Fixing the behaviour of <C-n> and <C-p>
 cnoremap <C-p> <up>
 cnoremap <C-n> <down>
