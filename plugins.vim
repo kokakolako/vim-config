@@ -4,8 +4,6 @@
 " Use powerline fonts
 let g:airline_powerline_fonts = 0
 
-highlight StartifyHeader ctermfg=0
-
 " Use a nice airline theme
 let g:airline_theme = "hemisu_airline"
 
@@ -30,8 +28,6 @@ let g:airline#extensions#tagbar#enabled = 1
 " --------------------------------------------------------
 
 let g:startify_files_number = 5
-let g:startify_custom_header =
-    \ map(split(system('fortune -as | cowsay -f bud-frogs'), '\n'), '"   ".v:val') + ['']
 
 " Better-Whitespace should not highlight the startify-page
 au FileType startify ToggleWhitespace
