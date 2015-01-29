@@ -2,174 +2,179 @@
 	path = src/molokai
 	url = https://github.com/kokakolako/molokai
     ignore = dirty
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+[submodule "plugins/vim-airline"]
+	path = plugins/vim-airline
 	url = https://github.com/bling/vim-airline
     ignore = dirty
-[submodule "bundle/vim-airlineish"]
-	path = bundle/vim-airlineish
+[submodule "plugins/vim-airlineish"]
+	path = plugins/vim-airlineish
 	url = https://github.com/paranoida/vim-airlineish
     ignore = dirty
-[submodule "bundle/vim-textobj-user"]
-	path = bundle/vim-textobj-user
+[submodule "plugins/vim-textobj-user"]
+	path = plugins/vim-textobj-user
 	url = https://github.com/kana/vim-textobj-user
     ignore = dirty
-[submodule "bundle/vim-better-whitespace"]
-	path = bundle/vim-better-whitespace
+[submodule "plugins/vim-better-whitespace"]
+	path = plugins/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
     ignore = dirty
-[submodule "bundle/vim-smartinput"]
-	path = bundle/vim-smartinput
+[submodule "plugins/vim-smartinput"]
+	path = plugins/vim-smartinput
 	url = https://github.com/kana/vim-smartinput
     ignore = dirty
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
+[submodule "plugins/syntastic"]
+	path = plugins/syntastic
 	url = https://github.com/scrooloose/syntastic
     ignore = dirty
-[submodule "bundle/tabular"]
-	path = bundle/tabular
+[submodule "plugins/tabular"]
+	path = plugins/tabular
 	url = https://github.com/godlygeek/tabular
     ignore = dirty
-[submodule "bundle/vimcaps"]
-	path = bundle/vimcaps
+[submodule "plugins/vimcaps"]
+	path = plugins/vimcaps
 	url = https://github.com/suxpert/vimcaps
     ignore = dirty
-[submodule "bundle/vim-sneak"]
-	path = bundle/vim-sneak
+[submodule "plugins/vim-sneak"]
+	path = plugins/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
     ignore = dirty
-[submodule "bundle/vim-exchange"]
-	path = bundle/vim-exchange
+[submodule "plugins/vim-exchange"]
+	path = plugins/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange
     ignore = dirty
-[submodule "bundle/vim-markdown-folding"]
-	path = bundle/vim-markdown-folding
+[submodule "plugins/vim-markdown-folding"]
+	path = plugins/vim-markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding
     ignore = dirty
-[submodule "bundle/colorizer"]
-	path = bundle/colorizer
+[submodule "plugins/colorizer"]
+	path = plugins/colorizer
 	url = https://github.com/lilydjwg/colorizer
     ignore = dirty
-[submodule "bundle/vim-abolish"]
-	path = bundle/vim-abolish
+[submodule "plugins/vim-abolish"]
+	path = plugins/vim-abolish
 	url = https://github.com/tpope/vim-abolish
     ignore = dirty
-[submodule "bundle/vim-eunuch"]
-	path = bundle/vim-eunuch
+[submodule "plugins/vim-eunuch"]
+	path = plugins/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch
     ignore = dirty
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+[submodule "plugins/vim-fugitive"]
+	path = plugins/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
     ignore = dirty
-[submodule "bundle/vim-obsession"]
-	path = bundle/vim-obsession
+[submodule "plugins/vim-obsession"]
+	path = plugins/vim-obsession
 	url = https://github.com/tpope/vim-obsession
     ignore = dirty
-[submodule "bundle/vim-repeat"]
-	path = bundle/vim-repeat
+[submodule "plugins/vim-repeat"]
+	path = plugins/vim-repeat
 	url = https://github.com/tpope/vim-repeat
     ignore = dirty
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+[submodule "plugins/vim-surround"]
+	path = plugins/vim-surround
 	url = https://github.com/tpope/vim-surround
     ignore = dirty
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
+[submodule "plugins/vim-markdown"]
+	path = plugins/vim-markdown
 	url = https://github.com/tpope/vim-markdown
     ignore = dirty
-[submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
+[submodule "plugins/vim-gitgutter"]
+	path = plugins/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
     ignore = dirty
-[submodule "bundle/wildfire.vim"]
-	path = bundle/wildfire.vim
+[submodule "plugins/wildfire.vim"]
+	path = plugins/wildfire.vim
 	url = https://github.com/gcmt/wildfire.vim
     ignore = dirty
-[submodule "bundle/vim-pathogen"]
-	path = bundle/vim-pathogen
+[submodule "plugins/vim-pathogen"]
+	path = plugins/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
     ignore = dirty
-[submodule "bundle/vim-textobj-entire"]
-	path = bundle/vim-textobj-entire
+[submodule "plugins/vim-textobj-entire"]
+	path = plugins/vim-textobj-entire
 	url = https://github.com/kana/vim-textobj-entire
     ignore = dirty
-[submodule "bundle/vim-startify"]
-	path = bundle/vim-startify
+[submodule "plugins/vim-startify"]
+	path = plugins/vim-startify
 	url = https://github.com/mhinz/vim-startify
     ignore = dirty
-[submodule "bundle/unite.vim"]
-	path = bundle/unite.vim
+[submodule "plugins/unite.vim"]
+	path = plugins/unite.vim
 	url = https://github.com/Shougo/unite.vim
     ignore = dirty
-[submodule "bundle/vimproc.vim"]
-	path = bundle/vimproc.vim
+[submodule "plugins/vimproc.vim"]
+	path = plugins/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim
     ignore = dirty
-[submodule "bundle/vim-vinegar"]
-	path = bundle/vim-vinegar
+[submodule "plugins/vim-vinegar"]
+	path = plugins/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
     ignore = dirty
-[submodule "bundle/vim-hemisu"]
-	path = bundle/vim-hemisu
+[submodule "plugins/vim-hemisu"]
+	path = plugins/vim-hemisu
 	url = https://github.com/noahfrederick/vim-hemisu
     ignore = dirty
-[submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
+[submodule "plugins/vim-dispatch"]
+	path = plugins/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch
     ignore = dirty
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
+[submodule "plugins/tagbar"]
+	path = plugins/tagbar
 	url = https://github.com/majutsushi/tagbar
     ignore = dirty
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
+[submodule "plugins/gundo.vim"]
+	path = plugins/gundo.vim
 	url = https://github.com/sjl/gundo.vim
     ignore = dirty
-[submodule "bundle/vim-ctrlspace"]
-	path = bundle/vim-ctrlspace
+[submodule "plugins/vim-ctrlspace"]
+	path = plugins/vim-ctrlspace
 	url = https://github.com/szw/vim-ctrlspace
     ignore = dirty
-[submodule "bundle/vim-indent-guides"]
-	path = bundle/vim-indent-guides
+[submodule "plugins/vim-indent-guides"]
+	path = plugins/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
     ignore = dirty
-[submodule "bundle/gist.vim"]
-	path = bundle/gist.vim
+[submodule "plugins/gist.vim"]
+	path = plugins/gist.vim
 	url = https://github.com/Keithbsmiley/gist.vim
     ignore = dirty
-[submodule "bundle/limelight.vim"]
-	path = bundle/limelight.vim
+[submodule "plugins/limelight.vim"]
+	path = plugins/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
     ignore = dirty
-[submodule "bundle/glowshi-ft.vim"]
-	path = bundle/glowshi-ft.vim
+[submodule "plugins/glowshi-ft.vim"]
+	path = plugins/glowshi-ft.vim
 	url = https://github.com/saihoooooooo/glowshi-ft.vim
     ignore = dirty
-[submodule "bundle/tcomment_vim"]
-	path = bundle/tcomment_vim
+[submodule "plugins/tcomment_vim"]
+	path = plugins/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
     ignore = dirty
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
+[submodule "plugins/ctrlp.vim"]
+	path = plugins/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
     ignore = dirty
-[submodule "bundle/supertab"]
-	path = bundle/supertab
+[submodule "plugins/supertab"]
+	path = plugins/supertab
 	url = https://github.com/ervandew/supertab.git
     ignore = dirty
-[submodule "bundle/vim-closetag"]
-	path = bundle/vim-closetag
+[submodule "plugins/vim-closetag"]
+	path = plugins/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
     ignore = dirty
-[submodule "bundle/javacomplete"]
-	path = bundle/javacomplete
+[submodule "plugins/javacomplete"]
+	path = plugins/javacomplete
 	url = https://github.com/adragomir/javacomplete.git
     ignore = dirty
-[submodule "bundle/rope-omni"]
-	path = bundle/rope-omni
+[submodule "plugins/rope-omni"]
+	path = plugins/rope-omni
 	url = https://github.com/rygwdn/rope-omni.git
     ignore = dirty
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
+[submodule "plugins/YouCompleteMe"]
+	path = plugins/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+    ignore = dirty
+[submodule "plugins/YouCompleteMe"]
+	path = plugins/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+    ignore = dirty
