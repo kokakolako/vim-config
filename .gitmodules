@@ -162,10 +162,6 @@
 	path = plugins/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
     ignore = dirty
-[submodule "plugins/javacomplete"]
-	path = plugins/javacomplete
-	url = https://github.com/adragomir/javacomplete.git
-    ignore = dirty
 [submodule "plugins/rope-omni"]
 	path = plugins/rope-omni
 	url = https://github.com/rygwdn/rope-omni.git
