@@ -1,59 +1,75 @@
-" Vim Extended-Configuration: Keymappings, Autocommands, Abbreviations
-
-" Keymappings
+" {{{1 Keymappings
 " --------------------------------------------------------
 
-" Uppercase the current word in insert mode
-nnoremap <C-u> <esc>vawUi
-
-" Use a more comfortable Leader Key (for a QUERTZ keyboard-layout)
+" use a more <space> as leader
 let mapleader = " "
 
-" Fixing the behaviour of <C-n> and <C-p>
+" fixing the behaviour of <c-n> and <c-p>
 cnoremap <C-p> <up>
 cnoremap <C-n> <down>
 
-" Don't differ 'fake-lines'
+" don't differ 'fake-lines'
 nnoremap j gj
 nnoremap k gk
 
-" Use J,K to switch buffers + Join Lines with <C-J>
-nnoremap <silent> J :bn<CR>
-nnoremap <silent> K :bp<CR>
-nnoremap <silent> <Leader>j :join<CR>
+" use J,K to switch between open buffers + join lines with <c-j>
+nnoremap <silent> J :bn<cr>
+nnoremap <silent> K :bp<cr>
+nnoremap <silent> <leader>j :join<cr>
 
-" Search for the same word but don't jump to it
+" search for the same word but don't jump to it
 nnoremap * *<C-O>
 
-" Leader Mappings
+" leader mappings
+nnoremap <leader>c :ColorToggle<cr>
+nnoremap <leader>s :StripWhitespace<cr>:echo "Removed the whitespace"<cr>
+nnoremap <leader>g :GitGutterToggle<cr>:echo "Toggled Gitgutter"<cr>
+nnoremap <leader>r :w<cr>:source %<cr>:echo "Sourced the current file"<cr>
+nnoremap <leader>v :split $HOME/.config/vim/vimrc<cr>
+nnoremap <leader>t :TagbarToggle<cr>
+nnoremap <leader>a :%s/->/→/g<cr>:echo "Replacing arrows"<cr>
+nnoremap <silent> <leader>u :GundoToggle<cr>
+nnoremap <silent> <leader>m :!pandoc -f markdown -t pdf %<cr>:echo "Finished compiling to PDF"<cr>
+
+" jump to the buffers directory
+nnoremap <leader>ü :cd %:p:h<cr>:pwd<cr>
+
+" open the current folding with <space><space>
+nnoremap <silent> <space><space> za
+
+" jump through the gitgutter hunks
+nnoremap <silent> ]g :GitGutterNextHunk<cr>
+nnoremap <silent> [g :GitGutterPrevHunk<cr>
+
+" }}}1
+" {{{1 Autocommands
 " --------------------------------------------------------
 
-nnoremap <Leader>c :ColorToggle<CR>
-nnoremap <Leader>s :StripWhitespace<CR>:echo "Removed the whitespace"<CR>
-nnoremap <Leader>g :GitGutterToggle<CR>:echo "Toggled Gitgutter"<CR>
-nnoremap <Leader>r :w<CR>:source %<CR>:echo "Sourced the current file"<CR>
-nnoremap <Leader>v :split $HOME/.config/vim/vimrc<CR>
-nnoremap <Leader>t :TagbarToggle<CR>
-nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
-nnoremap <silent> <Leader>u :GundoToggle<CR>
-nnoremap <silent> <leader>m :!pandoc -f markdown -t pdf %<CR>:echo "Finished compiling to PDF"<CR>
+if has("autocmd")
+    augroup new_buffer
+        " *.md = markdown
+        au BufNewFile,BufRead *.md set filetype=markdown
+        " enable spellcheck
+        au BufNewFile,BufRead,BufEnter *.md setlocal spell
+        " set textwidth to 76
+        au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
+    augroup END
+    augroup filetype_specific
+        " disable spellcheck in help-files
+        au FileType help setlocal nospell
+        " enable marker-folding in vim-files
+        au FileType vim setlocal foldmethod=marker
+        " use pandoc to prettify markdown (use 'gq' in normal-mode)
+        let pandoc_pipeline = "pandoc -f markdown -t markdown"
+        au FileType markdown,text let &formatprg=pandoc_pipeline
+    augroup END
+endif
 
-" Adding a modeline
-" nnoremap <silent> <Leader>m :normal Gi" vim: ft=vim fmr="{{{,}}}" fdm=manual<CR>
-
-" Jump to the buffers directory
-nnoremap <Leader>ü :cd %:p:h<CR>:pwd<CR>
-
-" Faster open the current Folding
-nnoremap <silent> <Space><Space> za
-
-" Jump through the GitGutter Hunks
-nnoremap <silent> ]g :GitGutterNextHunk<CR>
-nnoremap <silent> [g :GitGutterPrevHunk<CR>
-
-" Navigate through the splits the same way like in tmux
+"}}}
+" {{{1 Plugins
+" --------------------------------------------------------
+" {{{2 Navigate through the splits the same way like in tmux
 " http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
-" --------------------------------------------------------
 
 if exists('$TMUX')
   function! TmuxOrSplitSwitch(wincmd, tmuxdir)
@@ -64,11 +80,9 @@ if exists('$TMUX')
       redraw!
     endif
   endfunction
-
   let previous_title = substitute(system("tmux display-message -p '#{pane_title}'"), '\n', '', '')
   let &t_ti = "\<Esc>]2;vim\<Esc>\\" . &t_ti
   let &t_te = "\<Esc>]2;". previous_title . "\<Esc>\\" . &t_te
-
   nnoremap <silent> <C-h> :call TmuxOrSplitSwitch('h', 'L')<cr>
   nnoremap <silent> <C-j> :call TmuxOrSplitSwitch('j', 'D')<cr>
   nnoremap <silent> <C-k> :call TmuxOrSplitSwitch('k', 'U')<cr>
@@ -80,32 +94,48 @@ else
   map <C-l> <C-w>l
 endif
 
-" Autocommands
-" --------------------------------------------------------
+"}}}2
+" {{{2 Airline
+" ------------------------
 
-if has("autocmd")
-    augroup new_buffer
-        " *.md = Markdown
-        au BufNewFile,BufRead *.md set filetype=markdown
-        " Enable Spellcheck
-        au BufNewFile,BufRead,BufEnter *.md setlocal spell
-        " Set textwidth to 76
-        au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
-    augroup END
-    augroup filetype_specific
-        " Disable Spellcheck in Help-Files
-        au FileType help setlocal nospell
-        " Enable marker-folding in Vim-files
-        au FileType vim setlocal foldmethod=marker
-        " Use pandoc to prettify markdown (Use 'gq' in normal-mode)
-        let pandoc_pipeline = "pandoc -f markdown -t markdown"
-        au FileType markdown,text let &formatprg=pandoc_pipeline
-    augroup END
-endif
+let g:airline_powerline_fonts = 0 " use powerline fonts
+let g:airline_theme = "hemisu_airline" " use a nice airline theme
+let g:airline#extensions#whitespace#enabled = 1 " enable the whitespace extension
+let g:airline#extensions#tagbar#enabled = 1 " enabling the tagbar extension
+let g:airline#extensions#whitespace#checks = [ "indent", "trailing" ] " show trailing whitespace and identing
+let g:airline#extensions#whitespace#show_message = 1 " show a message ater cleanling whitespace
 
-" Abbreviations
-" --------------------------------------------------------
+" rice airline
+let g:airline_left_sep = " "
+let g:airline_right_sep = " "
+let g:airline_left_alt_sep = "|"
+let g:airline_right_alt_sep = "|"
 
-iabbrev -> →
-iabbrev Vergelich Vergleich
-iabbrev vergelich vergleich
+"}}}2
+" {{{2 Startify
+" ------------------------
+
+" show only the 5 recently modified files
+let g:startify_files_number = 5
+"
+" better-whitespace should not highlight whitespace at startify
+au FileType startify silent! ToggleWhitespace
+
+" configure the startify list-order
+let g:startify_list_order = [
+    \ ['   Recently modified'], 'files',
+    \ ['   Bookmarks'], 'bookmarks',
+    \ ['   Modified in current dir'], 'dir'
+\]
+" my bookmarks
+let g:startify_bookmarks = [ '~/.config/vim/vimrc', '~/.config/X11/Xresources', '~/.config/herbstluftwm/autostart', '~/.config/herbstluftwm/panel', '~/.config/sxhkd/sxhkdrc' ]
+
+"}}}2
+" {{{2 3.4 ctrlp
+" ------------------------
+
+let g:ctrlp_map = '<NUL>' " open ctrlp with <C-space>
+
+" }}}2
+"}}}1
+" vim: fdm=marker
