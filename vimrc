@@ -3,12 +3,12 @@ set nocompatible
 
 " Runtime path
 set rtp+=$HOME/.config/vim
-runtime! bundle/vim-pathogen/autoload/pathogen.vim
+runtime! plugins/vim-pathogen/autoload/pathogen.vim
 
 set term=screen-256color
 
 " Invoke Pathogen
-silent! execute pathogen#infect( "bundle/{}" )
+silent! execute pathogen#infect( "plugins/{}" )
 silent! execute pathogen#infect( "src/{}" )
 silent! execute pathogen#helptags()
 

@@ -36,7 +36,7 @@ nnoremap <Leader>v :split $HOME/.config/vim/vimrc<CR>
 nnoremap <Leader>t :TagbarToggle<CR>
 nnoremap <Leader>a :%s/->/→/g<CR>:echo "Replacing arrows"<CR>
 nnoremap <silent> <Leader>u :GundoToggle<CR>
-nnoremap <silent> <leader>m :!pandoc -o %:r.pdf %<CR>:echo "Finished compiling to PDF"<CR>
+nnoremap <silent> <leader>m :!pandoc -f markdown -t pdf %<CR>:echo "Finished compiling to PDF"<CR>
 
 " Adding a modeline
 " nnoremap <silent> <Leader>m :normal Gi" vim: ft=vim fmr="{{{,}}}" fdm=manual<CR>
@@ -84,36 +84,23 @@ endif
 " --------------------------------------------------------
 
 if has("autocmd")
-
-    augroup specific_ft
-
+    augroup new_buffer
+        " *.md = Markdown
+        au BufNewFile,BufRead *.md set filetype=markdown
+        " Enable Spellcheck
+        au BufNewFile,BufRead,BufEnter *.md setlocal spell
+        " Set textwidth to 76
+        au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
+    augroup END
+    augroup filetype_specific
         " Disable Spellcheck in Help-Files
         au FileType help setlocal nospell
         " Enable marker-folding in Vim-files
         au FileType vim setlocal foldmethod=marker
-
-        " Use pandoc to sort markdown (Use 'gq' in normal-mode)
-        let pandoc_pipeline = "pandoc --from=markdown --to=markdown"
+        " Use pandoc to prettify markdown (Use 'gq' in normal-mode)
+        let pandoc_pipeline = "pandoc -f markdown -t markdown"
         au FileType markdown,text let &formatprg=pandoc_pipeline
-
     augroup END
-
-    augroup new_buf_detect_ft
-
-        " Mutt Mail settings
-        au BufRead,BufNewFile *mutt-* setfiletype mail
-        " Enable Spellcheck
-        au BufNewFile,BufRead,BufEnter *.md setlocal spell
-
-        " Set textwidth to 76
-        au BufNewFile,BufRead,BufEnter *.md setlocal textwidth=76
-
-    augroup END
-
-    " augroup buf_write_tex
-    "     au BufWritePost,QuitPre *.tex,*.md silent !pandoc -o %:r.pdf %
-    " augroup END
-
 endif
 
 " Abbreviations

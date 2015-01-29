@@ -4,6 +4,8 @@
 " Use powerline fonts
 let g:airline_powerline_fonts = 0
 
+highlight StartifyHeader ctermfg=0
+
 " Use a nice airline theme
 let g:airline_theme = "hemisu_airline"
 
@@ -20,23 +22,9 @@ let g:airline_left_sep = " "
 let g:airline_right_sep = " "
 let g:airline_left_alt_sep = "|"
 let g:airline_right_alt_sep = "|"
-" let g:airline#extensions#tabline#left_sep = " "
-" let g:airline#extensions#tabline#right_sep = "  "
-" let g:airline#extensions#tabline#right_alt_sep = "|"
-" let g:airline#extensions#tabline#left_alt_sep = "|"
 
 " Enabling Tagbar
 let g:airline#extensions#tagbar#enabled = 1
-
-" CtrlSpace
-" --------------------------------------------------------
-
-" Let CtrlSpace display it own styles
-let g:airline_exclude_preview = 1
-let g:ctrlspace_use_tabline = 1
-
-" autocmd BufNewFile __CS__ set statusline=0
-" let g:ctrlspace_statusline=0
 
 " Startify (Custom Startpage)
 " --------------------------------------------------------
@@ -61,3 +49,15 @@ let g:startify_list_order = [
 \]
 
 let g:startify_bookmarks = [ '~/.vimrc', '~/.config/X11/Xresources', '~/.config/i3/config' ]
+
+" SuperTab
+" --------------------------------------------------------
+
+" Enable completion of filenames via SuperTab
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
+
+" CtrlP
+" --------------------------------------------------------
+
+let g:ctrlp_map = '<NUL>'
