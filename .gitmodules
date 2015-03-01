@@ -158,3 +158,12 @@
 	path = plugins/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
     ignore = dirty
+[submodule "plugins/vim-pandoc"]
+	path = plugins/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "plugins/vim-jinja"]
+	path = plugins/vim-jinja
+	url = https://github.com/mitsuhiko/vim-jinja.git
+[submodule "plugins/vim-tmux-navigator"]
+	path = plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
