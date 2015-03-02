@@ -167,3 +167,129 @@
 [submodule "plugins/vim-tmux-navigator"]
 	path = plugins/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "https:/github.com/bling/vim-airline"]
+	path = https:/github.com/bling/vim-airline
+	url = https://github.com/kokakolako/molokai
+[submodule "molokai"]
+	path = molokai
+	url = https://github.com/kokakolako/molokai
+[submodule "vim-airlineish"]
+	path = vim-airlineish
+	url = https://github.com/paranoida/vim-airlineish
+[submodule "vim-textobj-user"]
+	path = vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
+[submodule "vim-better-whitespace"]
+	path = vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "vim-smartinput"]
+	path = vim-smartinput
+	url = https://github.com/kana/vim-smartinput
+[submodule "syntastic"]
+	path = syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "tabular"]
+	path = tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "vimcaps"]
+	path = vimcaps
+	url = https://github.com/suxpert/vimcaps
+[submodule "vim-sneak"]
+	path = vim-sneak
+	url = https://github.com/justinmk/vim-sneak
+[submodule "vim-exchange"]
+	path = vim-exchange
+	url = https://github.com/tommcdo/vim-exchange
+[submodule "vim-markdown-folding"]
+	path = vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding
+[submodule "colorizer"]
+	path = colorizer
+	url = https://github.com/lilydjwg/colorizer
+[submodule "vim-abolish"]
+	path = vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "vim-eunuch"]
+	path = vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
+[submodule "vim-fugitive"]
+	path = vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim-repeat"]
+	path = vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "vim-surround"]
+	path = vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim-markdown"]
+	path = vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule "vim-gitgutter"]
+	path = vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "wildfire.vim"]
+	path = wildfire.vim
+	url = https://github.com/gcmt/wildfire.vim
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule "vim-textobj-entire"]
+	path = vim-textobj-entire
+	url = https://github.com/kana/vim-textobj-entire
+[submodule "vim-startify"]
+	path = vim-startify
+	url = https://github.com/mhinz/vim-startify
+[submodule "vim-vinegar"]
+	path = vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "vim-hemisu"]
+	path = vim-hemisu
+	url = https://github.com/noahfrederick/vim-hemisu
+[submodule "vim-dispatch"]
+	path = vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "tagbar"]
+	path = tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "gundo.vim"]
+	path = gundo.vim
+	url = https://github.com/sjl/gundo.vim
+[submodule "vim-ctrlspace"]
+	path = vim-ctrlspace
+	url = https://github.com/szw/vim-ctrlspace
+[submodule "vim-indent-guides"]
+	path = vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "gist.vim"]
+	path = gist.vim
+	url = https://github.com/Keithbsmiley/gist.vim
+[submodule "limelight.vim"]
+	path = limelight.vim
+	url = https://github.com/junegunn/limelight.vim
+[submodule "glowshi-ft.vim"]
+	path = glowshi-ft.vim
+	url = https://github.com/saihoooooooo/glowshi-ft.vim
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim-closetag"]
+	path = vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
+[submodule "rope-omni"]
+	path = rope-omni
+	url = https://github.com/rygwdn/rope-omni.git
+[submodule "YouCompleteMe"]
+	path = YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "vim-pandoc"]
+	path = vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "vim-jinja"]
+	path = vim-jinja
+	url = https://github.com/mitsuhiko/vim-jinja.git
+[submodule "vim-tmux-navigator"]
+	path = vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "plugins/molokai"]
+	path = plugins/molokai
+	url = https://github.com/kokakolako/molokai
