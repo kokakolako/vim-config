@@ -338,3 +338,7 @@
 	path = plugins/tComment
 	url = https://github.com/vim-scripts/tComment
     ignore = dirty
+[submodule "plugins/vim-obsession"]
+	path = plugins/vim-obsession
+	url = https://github.com/tpope/vim-obsession.git
+    ignore = dirty
