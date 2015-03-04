@@ -2,171 +2,10 @@
 	path = src/molokai
 	url = https://github.com/kokakolako/molokai
     ignore = dirty
-[submodule "plugins/vim-airline"]
-	path = plugins/vim-airline
-	url = https://github.com/bling/vim-airline
-    ignore = dirty
-[submodule "plugins/vim-airlineish"]
-	path = plugins/vim-airlineish
-	url = https://github.com/paranoida/vim-airlineish
-    ignore = dirty
-[submodule "plugins/vim-textobj-user"]
-	path = plugins/vim-textobj-user
-	url = https://github.com/kana/vim-textobj-user
-    ignore = dirty
-[submodule "plugins/vim-better-whitespace"]
-	path = plugins/vim-better-whitespace
-	url = https://github.com/ntpeters/vim-better-whitespace
-    ignore = dirty
-[submodule "plugins/vim-smartinput"]
-	path = plugins/vim-smartinput
-	url = https://github.com/kana/vim-smartinput
-    ignore = dirty
-[submodule "plugins/syntastic"]
-	path = plugins/syntastic
-	url = https://github.com/scrooloose/syntastic
-    ignore = dirty
-[submodule "plugins/tabular"]
-	path = plugins/tabular
-	url = https://github.com/godlygeek/tabular
-    ignore = dirty
-[submodule "plugins/vimcaps"]
-	path = plugins/vimcaps
-	url = https://github.com/suxpert/vimcaps
-    ignore = dirty
-[submodule "plugins/vim-sneak"]
-	path = plugins/vim-sneak
-	url = https://github.com/justinmk/vim-sneak
-    ignore = dirty
-[submodule "plugins/vim-exchange"]
-	path = plugins/vim-exchange
-	url = https://github.com/tommcdo/vim-exchange
-    ignore = dirty
-[submodule "plugins/vim-markdown-folding"]
-	path = plugins/vim-markdown-folding
-	url = https://github.com/nelstrom/vim-markdown-folding
-    ignore = dirty
-[submodule "plugins/colorizer"]
-	path = plugins/colorizer
-	url = https://github.com/lilydjwg/colorizer
-    ignore = dirty
-[submodule "plugins/vim-abolish"]
-	path = plugins/vim-abolish
-	url = https://github.com/tpope/vim-abolish
-    ignore = dirty
-[submodule "plugins/vim-eunuch"]
-	path = plugins/vim-eunuch
-	url = https://github.com/tpope/vim-eunuch
-    ignore = dirty
-[submodule "plugins/vim-fugitive"]
-	path = plugins/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-    ignore = dirty
-[submodule "plugins/vim-repeat"]
-	path = plugins/vim-repeat
-	url = https://github.com/tpope/vim-repeat
-    ignore = dirty
-[submodule "plugins/vim-surround"]
-	path = plugins/vim-surround
-	url = https://github.com/tpope/vim-surround
-    ignore = dirty
-[submodule "plugins/vim-markdown"]
-	path = plugins/vim-markdown
-	url = https://github.com/tpope/vim-markdown
-    ignore = dirty
-[submodule "plugins/vim-gitgutter"]
-	path = plugins/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
-    ignore = dirty
-[submodule "plugins/wildfire.vim"]
-	path = plugins/wildfire.vim
-	url = https://github.com/gcmt/wildfire.vim
-    ignore = dirty
-[submodule "plugins/vim-pathogen"]
-	path = plugins/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen
-    ignore = dirty
-[submodule "plugins/vim-textobj-entire"]
-	path = plugins/vim-textobj-entire
-	url = https://github.com/kana/vim-textobj-entire
-    ignore = dirty
-[submodule "plugins/vim-startify"]
-	path = plugins/vim-startify
-	url = https://github.com/mhinz/vim-startify
-    ignore = dirty
-[submodule "plugins/vim-vinegar"]
-	path = plugins/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar
-    ignore = dirty
-[submodule "plugins/vim-hemisu"]
-	path = plugins/vim-hemisu
-	url = https://github.com/noahfrederick/vim-hemisu
-    ignore = dirty
-[submodule "plugins/vim-dispatch"]
-	path = plugins/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch
-    ignore = dirty
-[submodule "plugins/tagbar"]
-	path = plugins/tagbar
-	url = https://github.com/majutsushi/tagbar
-    ignore = dirty
-[submodule "plugins/gundo.vim"]
-	path = plugins/gundo.vim
-	url = https://github.com/sjl/gundo.vim
-    ignore = dirty
-[submodule "plugins/vim-ctrlspace"]
-	path = plugins/vim-ctrlspace
-	url = https://github.com/szw/vim-ctrlspace
-    ignore = dirty
-[submodule "plugins/vim-indent-guides"]
-	path = plugins/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides
-    ignore = dirty
-[submodule "plugins/gist.vim"]
-	path = plugins/gist.vim
-	url = https://github.com/Keithbsmiley/gist.vim
-    ignore = dirty
-[submodule "plugins/limelight.vim"]
-	path = plugins/limelight.vim
-	url = https://github.com/junegunn/limelight.vim
-    ignore = dirty
-[submodule "plugins/glowshi-ft.vim"]
-	path = plugins/glowshi-ft.vim
-	url = https://github.com/saihoooooooo/glowshi-ft.vim
-    ignore = dirty
 [submodule "plugins/tcomment_vim"]
 	path = plugins/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
     ignore = dirty
-[submodule "plugins/ctrlp.vim"]
-	path = plugins/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-    ignore = dirty
-[submodule "plugins/vim-closetag"]
-	path = plugins/vim-closetag
-	url = https://github.com/alvan/vim-closetag.git
-    ignore = dirty
-[submodule "plugins/rope-omni"]
-	path = plugins/rope-omni
-	url = https://github.com/rygwdn/rope-omni.git
-    ignore = dirty
-[submodule "plugins/YouCompleteMe"]
-	path = plugins/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-    ignore = dirty
-[submodule "plugins/YouCompleteMe"]
-	path = plugins/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-    ignore = dirty
-[submodule "plugins/vim-pandoc"]
-	path = plugins/vim-pandoc
-	url = https://github.com/vim-pandoc/vim-pandoc.git
-[submodule "plugins/vim-jinja"]
-	path = plugins/vim-jinja
-	url = https://github.com/mitsuhiko/vim-jinja.git
-[submodule "plugins/vim-tmux-navigator"]
-	path = plugins/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator
 [submodule "https:/github.com/bling/vim-airline"]
 	path = https:/github.com/bling/vim-airline
 	url = https://github.com/kokakolako/molokai
@@ -293,3 +132,126 @@
 [submodule "plugins/molokai"]
 	path = plugins/molokai
 	url = https://github.com/kokakolako/molokai
+[submodule "plugins/vim-airlineish"]
+	path = plugins/vim-airlineish
+	url = https://github.com/paranoida/vim-airlineish
+[submodule "plugins/vim-textobj-user"]
+	path = plugins/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
+[submodule "plugins/vim-better-whitespace"]
+	path = plugins/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "plugins/vim-smartinput"]
+	path = plugins/vim-smartinput
+	url = https://github.com/kana/vim-smartinput
+[submodule "plugins/syntastic"]
+	path = plugins/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "plugins/tabular"]
+	path = plugins/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "plugins/vimcaps"]
+	path = plugins/vimcaps
+	url = https://github.com/suxpert/vimcaps
+[submodule "plugins/vim-sneak"]
+	path = plugins/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
+[submodule "plugins/vim-exchange"]
+	path = plugins/vim-exchange
+	url = https://github.com/tommcdo/vim-exchange
+[submodule "plugins/vim-markdown-folding"]
+	path = plugins/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding
+[submodule "plugins/colorizer"]
+	path = plugins/colorizer
+	url = https://github.com/lilydjwg/colorizer
+[submodule "plugins/vim-abolish"]
+	path = plugins/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "plugins/vim-eunuch"]
+	path = plugins/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
+[submodule "plugins/vim-fugitive"]
+	path = plugins/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "plugins/vim-repeat"]
+	path = plugins/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "plugins/vim-surround"]
+	path = plugins/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "plugins/vim-markdown"]
+	path = plugins/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule "plugins/vim-gitgutter"]
+	path = plugins/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "plugins/wildfire.vim"]
+	path = plugins/wildfire.vim
+	url = https://github.com/gcmt/wildfire.vim
+[submodule "plugins/vim-pathogen"]
+	path = plugins/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule "plugins/vim-textobj-entire"]
+	path = plugins/vim-textobj-entire
+	url = https://github.com/kana/vim-textobj-entire
+[submodule "plugins/vim-startify"]
+	path = plugins/vim-startify
+	url = https://github.com/mhinz/vim-startify
+[submodule "plugins/vim-vinegar"]
+	path = plugins/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "plugins/vim-hemisu"]
+	path = plugins/vim-hemisu
+	url = https://github.com/noahfrederick/vim-hemisu
+[submodule "plugins/vim-dispatch"]
+	path = plugins/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "plugins/tagbar"]
+	path = plugins/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "plugins/gundo.vim"]
+	path = plugins/gundo.vim
+	url = https://github.com/sjl/gundo.vim
+[submodule "plugins/vim-ctrlspace"]
+	path = plugins/vim-ctrlspace
+	url = https://github.com/szw/vim-ctrlspace
+[submodule "plugins/vim-indent-guides"]
+	path = plugins/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "plugins/gist.vim"]
+	path = plugins/gist.vim
+	url = https://github.com/Keithbsmiley/gist.vim
+[submodule "plugins/limelight.vim"]
+	path = plugins/limelight.vim
+	url = https://github.com/junegunn/limelight.vim
+[submodule "plugins/glowshi-ft.vim"]
+	path = plugins/glowshi-ft.vim
+	url = https://github.com/saihoooooooo/glowshi-ft.vim
+[submodule "plugins/ctrlp.vim"]
+	path = plugins/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "plugins/vim-closetag"]
+	path = plugins/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
+[submodule "plugins/rope-omni"]
+	path = plugins/rope-omni
+	url = https://github.com/rygwdn/rope-omni.git
+[submodule "plugins/YouCompleteMe"]
+	path = plugins/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "plugins/vim-pandoc"]
+	path = plugins/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "plugins/vim-jinja"]
+	path = plugins/vim-jinja
+	url = https://github.com/mitsuhiko/vim-jinja.git
+[submodule "plugins/vim-tmux-navigator"]
+	path = plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "plugins/vim-airline"]
+	path = plugins/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "plugins/tComment"]
+	path = plugins/tComment
+	url = https://github.com/vim-scripts/tComment
