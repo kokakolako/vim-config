@@ -18,7 +18,6 @@ filetype plugin indent on
 syntax on
 
 " general settings
-set autochdir                                      " automatically open the dir of currently opened file
 set autoindent                                     " enable auto-identing
 set autowrite                                      " automatically write when changing buffer
 set backspace=indent,eol,start                     " use backspace in insert-mode
